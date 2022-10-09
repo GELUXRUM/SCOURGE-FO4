@@ -1,0 +1,1294 @@
+{
+	"modName": "SCOURGE - Point Lookout",
+	"displayName": "SCOURGE - Point Lookout",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["SCOURGE - Point Lookout.esp"],
+	"content": [{
+			"type": "spacer",
+			"numLines": 3
+		},
+		{
+			"text": "<p align='center'><font size='16'>Welcome to</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='45'>SCOURGE</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='20'>The One Rework To Rule Them All</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='14'>Point Lookout Patch</font></p>",
+			"html": true,
+			"type": "text"
+		}
+	],
+	"pages": [{
+			"pageDisplayName": "Health",
+			"content": [{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "ChickenHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2"
+					}
+				},
+				{
+					"text": "Frog",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "FrogHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|9"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|A"
+					}
+				},
+				{
+					"text": "Swampfolk: Large",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkLargeHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 160",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|11"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 220",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|12"
+					}
+				},
+				{
+					"text": "Swampfolk: Medium",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkMediumHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 110",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|19"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1A"
+					}
+				},
+				{
+					"text": "Swampfolk: Small",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkSmallHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|21"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|22"
+					}
+				},
+				{
+					"text": "Swamplurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwamplurkQueenHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|29"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2A"
+					}
+				},
+				{
+					"text": "Robobrain",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "RobobrainHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 220",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|EE"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 330",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|EF"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Damage Resistance",
+			"content": [{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "ChickenDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|3"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|4"
+					}
+				},
+				{
+					"text": "Frog",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "FrogDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|B"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|C"
+					}
+				},
+				{
+					"text": "Swampfolk: Large",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkLargeDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|13"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|14"
+					}
+				},
+				{
+					"text": "Swampfolk: Medium",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkMediumDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 2",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1B"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1C"
+					}
+				},
+				{
+					"text": "Swampfolk: Small",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkSmallDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|23"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|24"
+					}
+				},
+				{
+					"text": "Swamplurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwamplurkQueenDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2B"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 90",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2C"
+					}
+				},
+				{
+					"text": "Robobrain",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "RobobrainDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 70",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F0"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 90",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F1"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Energy Resistance",
+			"content": [{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "ChickenEnergyResist"
+					}
+				},
+				{
+					"text": "MinimumEnergy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|5"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|6"
+					}
+				},
+				{
+					"text": "Frog",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "FrogEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|D"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|E"
+					}
+				},
+				{
+					"text": "Swampfolk: Large",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkLargeEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|15"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|16"
+					}
+				},
+				{
+					"text": "Swampfolk: Medium",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkMediumEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1D"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1E"
+					}
+				},
+				{
+					"text": "Swampfolk: Small",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkSmallEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|25"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|26"
+					}
+				},
+				{
+					"text": "Swamplurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwamplurkQueenEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2D"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2E"
+					}
+				},
+				{
+					"text": "Robobrain",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "RobobrainEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F2"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 65",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F3"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Speed Multiplier",
+			"content": [{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "ChickenSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|7"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|8"
+					}
+				},
+				{
+					"text": "Frog",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "FrogSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|10"
+					}
+				},
+				{
+					"text": "Swampfolk: Large",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkLargeSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|17"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|18"
+					}
+				},
+				{
+					"text": "Swampfolk: Medium",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkMediumSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|1F"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|20"
+					}
+				},
+				{
+					"text": "Swampfolk: Small",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkSmallSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|27"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|28"
+					}
+				},
+				{
+					"text": "Swamplurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwamplurkQueenSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|2F"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|30"
+					}
+				}
+				,
+				{
+					"text": "Robobrain",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "RobobrainSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F4"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Point Lookout.esp|F5"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Stat Influence",
+			"content": [{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "ChickenInfluence"
+					}
+				},
+				{
+					"text": "Frog",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "FrogInfluence"
+					}
+				},
+				{
+					"text": "Swampfolk: Large",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkLargeInfluence"
+					}
+				},
+				{
+					"text": "Swampfolk: Medium",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkMediumInfluence"
+					}
+				},
+				{
+					"text": "Swampfolk: Small",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwampfolkSmallInfluence"
+					}
+				},
+				{
+					"text": "Swamplurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "SwamplurkQueenInfluence"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Master Control",
+			"content": [{
+					"text": "Individual master toggles:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Controls whether these stats are being recalculated for all NPCs by setting all respective toggles to ON or OFF. To avoid having to individually turn off each one. These can also be used as reset switches for any toggles you may have changed to save time. Note that any existing NPCs will not have their original values restored.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "EnableHealth"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Point Lookout.esp|37",
+						"function": "ToggleHealthSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "EnableDamageResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Point Lookout.esp|37",
+						"function": "ToggleDamageResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "EnableEnergyResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Point Lookout.esp|37",
+						"function": "ToggleEnergyResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "EnableSpeedMult"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Point Lookout.esp|37",
+						"function": "ToggleSpeedMultSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Health on Speed Influence",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Point Lookout.esp|37",
+						"propertyName": "EnableInfluence"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Point Lookout.esp|37",
+						"function": "ToggleInfluenceSwitchers",
+						"params": ["{value}"]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1805 @@
+{
+	"modName": "SCOURGE - Nuka World",
+	"displayName": "SCOURGE - Nuka World",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["SCOURGE - Nuka World.esp", "SCOURGE - Vanilla.esp"],
+	"content": [{
+			"type": "spacer",
+			"numLines": 3
+		},
+		{
+			"text": "<p align='center'><font size='16'>Welcome to</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='69' color='#42069A'>SCOURGE</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='20'>The One Rework To Rule Them All</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='14'>Nuka World</font></p>",
+			"html": true,
+			"type": "text"
+		}
+	],
+	"pages": [{
+			"pageDisplayName": "Health",
+			"content": [{
+					"text": "Animatronic Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AnimatronicAlienHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 70",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|200"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 110",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|201"
+					}
+				},
+				{
+					"text": "Ant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AntHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|212"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|213"
+					}
+				},
+				{
+					"text": "Bloodworm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BloodwormHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|224"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 180",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|225"
+					}
+				},
+				{
+					"text": "Brahmiluff",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BrahmiluffHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|236"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 420",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|237"
+					}
+				},
+				{
+					"text": "Cricket",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "CricketHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|248"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 450",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|249"
+					}
+				},
+				{
+					"text": "Deathclaw: Quantum (Cut Content)",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "DeathclawQuantumHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25A"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 1000",
+					"valueOptions": {
+						"min": 0,
+						"max": 2000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25B"
+					}
+				},
+				{
+					"text": "Gatorclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GatorclawHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 700",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|26C"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 1100",
+					"valueOptions": {
+						"min": 0,
+						"max": 2000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|26D"
+					}
+				},
+				{
+					"text": "Ghoulrilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GhoulrillaHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 375",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|27E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 565",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|27F"
+					}
+				},
+				{
+					"text": "Rat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "RatHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|290"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|291"
+					}
+				},
+				{
+					"text": "Swarm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "SwarmHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A2"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A3"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Damage Resistance",
+			"content": [{
+					"text": "Animatronic Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AnimatronicAlienDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|202"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|203"
+					}
+				},
+				{
+					"text": "Ant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AntDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|214"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|215"
+					}
+				},
+				{
+					"text": "Bloodworm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BloodwormDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|226"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 17",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|227"
+					}
+				},
+				{
+					"text": "Brahmiluff",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BrahmiluffDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|238"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|239"
+					}
+				},
+				{
+					"text": "Cricket",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "CricketDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24A"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24B"
+					}
+				},
+				{
+					"text": "Deathclaw: Quantum (Cut Content)",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "DeathclawQuantumDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25C"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25D"
+					}
+				},
+				{
+					"text": "Gatorclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GatorclawDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|26E"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 450",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|26F"
+					}
+				},
+				{
+					"text": "Ghoulrilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GhoulrillaDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|280"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|281"
+					}
+				},
+				{
+					"text": "Rat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "RatDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|292"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|293"
+					}
+				},
+				{
+					"text": "Swarm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "SwarmDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A4"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A5"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Energy Resistance",
+			"content": [{
+					"text": "Animatronic Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AnimatronicAlienEnergyResist"
+					}
+				},
+				{
+					"text": "MinimumEnergy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|204"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|205"
+					}
+				},
+				{
+					"text": "Ant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AntEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|216"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|217"
+					}
+				},
+				{
+					"text": "Bloodworm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BloodwormEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|228"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|229"
+					}
+				},
+				{
+					"text": "Brahmiluff",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BrahmiluffEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|23A"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|23B"
+					}
+				},
+				{
+					"text": "Cricket",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "CricketEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24C"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24D"
+					}
+				},
+				{
+					"text": "Deathclaw: Quantum (Cut Content)",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "DeathclawQuantumEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25E"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 375",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|25F"
+					}
+				},
+				{
+					"text": "Gatorclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GatorclawEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|270"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|271"
+					}
+				},
+				{
+					"text": "Ghoulrilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GhoulrillaEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|282"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|283"
+					}
+				},
+				{
+					"text": "Rat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "RatEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|294"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|295"
+					}
+				},
+				{
+					"text": "Swarm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "SwarmEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A6"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A7"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Speed Multiplier",
+			"content": [{
+					"text": "Animatronic Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AnimatronicAlienSpeedMult"
+					}
+				},
+				{
+					"text": "MinimumSpeed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|206"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|207"
+					}
+				},
+				{
+					"text": "Ant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AntSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|218"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|219"
+					}
+				},
+				{
+					"text": "Bloodworm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BloodwormSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|22A"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|22B"
+					}
+				},
+				{
+					"text": "Brahmiluff",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BrahmiluffSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|23C"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|23D"
+					}
+				},
+				{
+					"text": "Cricket",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "CricketSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24E"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|24F"
+					}
+				},
+				{
+					"text": "Deathclaw: Quantum (Cut Content)",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "DeathclawQuantumSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|260"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|261"
+					}
+				},
+				{
+					"text": "Gatorclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GatorclawSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|272"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|273"
+					}
+				},
+				{
+					"text": "Ghoulrilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GhoulrillaSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|284"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|285"
+					}
+				},
+				{
+					"text": "Rat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "RatEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|296"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|297"
+					}
+				},
+				{
+					"text": "Swarm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "SwarmEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A8"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Nuka World.esp|2A9"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Stat Influence",
+			"content": [{
+					"text": "Animatronic Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AnimatronicAlienInfluence"
+					}
+				},
+				{
+					"text": "Ant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "AntInfluence"
+					}
+				},
+				{
+					"text": "Bloodworm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BloodwormInfluence"
+					}
+				},
+				{
+					"text": "Brahmiluff",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "BrahmiluffInfluence"
+					}
+				},
+				{
+					"text": "Cricket",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "CricketInfluence"
+					}
+				},
+				{
+					"text": "Deathclaw: Quantum (Cut Content)",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "DeathclawQuantumInfluence"
+					}
+				},
+				{
+					"text": "Gatorclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GatorclawInfluence"
+					}
+				},
+				{
+					"text": "Ghoulrilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "GhoulrillaInfluence"
+					}
+				},
+				{
+					"text": "Rat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "RatInfluence"
+					}
+				},
+				{
+					"text": "Swarm",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "SwarmInfluence"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Master Control",
+			"content": [{
+					"text": "Individual master toggles:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Controls whether these stats are being recalculated for Nuka World NPCs by setting all respective toggles to ON or OFF - to avoid having to individually turn off each one. These can also be used as reset switches for any toggles you may have changed to save time.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "EnableHealth"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Nuka World.esp|20",
+						"function": "ToggleHealthSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "EnableDamageResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Nuka World.esp|20",
+						"function": "ToggleDamageResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "EnableEnergyResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Nuka World.esp|20",
+						"function": "ToggleEnergyResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "EnableSpeedMult"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Nuka World.esp|20",
+						"function": "ToggleSpeedMultSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Health on Speed Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Nuka World.esp|20",
+						"propertyName": "EnableInfluence"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Nuka World.esp|20",
+						"function": "ToggleInfluenceSwitchers",
+						"params": ["{value}"]
+					}
+				}
+			]
+		}
+	]
+}

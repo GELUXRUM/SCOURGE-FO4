@@ -1,0 +1,323 @@
+{
+	"modName": "SCOURGE - Automatron",
+	"displayName": "SCOURGE - Automatron",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["SCOURGE - Automatron.esp", "SCOURGE - Vanilla.esp"],
+	"content": [{
+			"type": "spacer",
+			"numLines": 3
+		},
+		{
+			"text": "<p align='center'><font size='16'>Welcome to</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='69' color='#42069A'>SCOURGE</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='20'>The One Rework To Rule Them All</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='14'>Automatron</font></p>",
+			"html": true,
+			"type": "text"
+		}
+	],
+	"pages": [{
+			"pageDisplayName": "Robobrain Stats",
+			"content": [{
+					"text": "Health",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Automatron.esp|20",
+						"propertyName": "RobobrainHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|200"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 440",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|201"
+					}
+				},
+				{
+					"text": "Damage Resistance",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Automatron.esp|20",
+						"propertyName": "RobobrainDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 65",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|202"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 115",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|203"
+					}
+				},
+				{
+					"text": "Energy Resistance",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Automatron.esp|20",
+						"propertyName": "RobobrainEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|204"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|205"
+					}
+				},
+				{
+					"text": "Speed Multiplier",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Automatron.esp|20",
+						"propertyName": "RobobrainSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|206"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|207"
+					}
+				},
+				{
+					"text": "Health on Speed Influence",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Automatron.esp|20",
+						"propertyName": "RobobrainInfluence"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "DLC Buff Values",
+			"content": [{
+				"text": "<font size='14'>    This is a brand new system made specifically for Automatron robots. Due to many robots in Automatron sharing data with vanilla robots, SCOURGE - Vanilla would change all these new enemies based on vanilla stats. However, the DLC is supposed to add new, tougher robots than their vanilla counterparts. As a result, there needs to be some extra work done to add support for this.<br>    The sliders below will dictate how much stronger robots that belong to any Automatron faction are. All robots apart from Robobrains will generate stats using SCOURGE - Vanilla values, and once those values are generated e.g. 200, a new value will be generated based on these sliders e.g. 1.3. Then, the 200 will be multiplied by 1.3 to give the final value of 260. You can set all these sliders to 1 to have Automatron robots have the same stats as those from vanilla.<br>    If there are any unintentional changes made and these values apply to NPCs it shouldn't, then you should let me know under the main mod page or through Discord (check mod page for links).</font>",
+				"html": true,
+				"type": "text"
+				},
+				{
+					"text": "Health",
+					"type": "section"
+				},
+				{
+					"text": "Minimum Health Buff",
+					"type": "slider",
+					"help": "Default: 1.25",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|212"
+					}
+				},
+				{
+					"text": "Maximum Health Buff",
+					"type": "slider",
+					"help": "Default: 1.50",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|213"
+					}
+				},
+				{
+					"text": "Damage Resistance",
+					"type": "section"
+				},
+				{
+					"text": "Minimum Damage Resistance Buff",
+					"type": "slider",
+					"help": "Default: 1.25",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|214"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance Buff",
+					"type": "slider",
+					"help": "Default: 1.50",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|215"
+					}
+				},
+				{
+					"text": "Energy Resistance",
+					"type": "section"
+				},
+				{
+					"text": "Minimum Energy Resistance Buff",
+					"type": "slider",
+					"help": "Default: 1.25",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|216"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance Buff",
+					"type": "slider",
+					"help": "Default: 1.50",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|217"
+					}
+				},
+				{
+					"text": "Speed Multiplier",
+					"type": "section"
+				},
+				{
+					"text": "Minimum Speed Multiplier Buff",
+					"type": "slider",
+					"help": "Default: 1.25",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|218"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier Buff",
+					"type": "slider",
+					"help": "Default: 1.50",
+					"valueOptions": {
+						"min": 0,
+						"max": 3,
+						"step": 0.05,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Automatron.esp|219"
+					}
+				}
+			]
+		}
+	]
+}

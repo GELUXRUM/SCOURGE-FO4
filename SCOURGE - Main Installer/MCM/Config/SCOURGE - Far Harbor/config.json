@@ -1,0 +1,1639 @@
+{
+	"modName": "SCOURGE - Far Harbor",
+	"displayName": "SCOURGE - Far Harbor",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["SCOURGE - Far Harbor.esp", "SCOURGE - Vanilla.esp"],
+	"content": [{
+			"type": "spacer",
+			"numLines": 3
+		},
+		{
+			"text": "<p align='center'><font size='16'>Welcome to</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='69' color='#42069A'>SCOURGE</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='20'>The One Rework To Rule Them All</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='14'>Far Harbor</font></p>",
+			"html": true,
+			"type": "text"
+		}
+	],
+	"pages": [{
+			"pageDisplayName": "Health",
+			"content": [{
+					"text": "Angler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "AnglerHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 420",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|200"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 800",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|201"
+					}
+				},
+				{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "ChickenHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|212"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|213"
+					}
+				},
+				{
+					"text": "Fog Crawler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "FogCrawlerHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 700",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|224"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 1100",
+					"valueOptions": {
+						"min": 0,
+						"max": 2000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|225"
+					}
+				},
+				{
+					"text": "Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|236"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 550",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|237"
+					}
+				},
+				{
+					"text": "Gulper Devourer",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDevourerHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|248"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 1200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|249"
+					}
+				},
+				{
+					"text": "Young Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperYoungHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25A"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 400",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25B"
+					}
+				},
+				{
+					"text": "Hermit Crab",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "HermitCrabHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 2000",
+					"valueOptions": {
+						"min": 1000,
+						"max": 3000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|26C"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 4000",
+					"valueOptions": {
+						"min": 1000,
+						"max": 5000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|26D"
+					}
+				},
+				{
+					"text": "Rabbit",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "RabbitHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|27E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|27F"
+					}
+				},
+				{
+					"text": "Wolf",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "WolfHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|290"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|291"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Damage Resistance",
+			"content": [{
+					"text": "Angler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "AnglerDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|202"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 140",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|203"
+					}
+				},
+				{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "ChickenDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|214"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|215"
+					}
+				},
+				{
+					"text": "Fog Crawler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "FogCrawlerDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|226"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|227"
+					}
+				},
+				{
+					"text": "Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|238"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|239"
+					}
+				},
+				{
+					"text": "Gulper Devourer",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDevourerDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24A"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24B"
+					}
+				},
+				{
+					"text": "Young Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperYoungDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25C"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25D"
+					}
+				},
+				{
+					"text": "Hermit Crab",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "HermitCrabDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|26E"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|26F"
+					}
+				},
+				{
+					"text": "Rabbit",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "RabbitDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|280"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|281"
+					}
+				},
+				{
+					"text": "Wolf",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "WolfDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|292"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|293"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Energy Resistance",
+			"content": [{
+					"text": "Angler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "AnglerEnergyResist"
+					}
+				},
+				{
+					"text": "MinimumEnergy Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|204"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|205"
+					}
+				},
+				{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "ChickenEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|216"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|217"
+					}
+				},
+				{
+					"text": "Fog Crawler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "FogCrawlerEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|228"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|229"
+					}
+				},
+				{
+					"text": "Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|23A"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|23B"
+					}
+				},
+				{
+					"text": "Gulper Devourer",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDevourerEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24C"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24D"
+					}
+				},
+				{
+					"text": "Young Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperYoungEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25E"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|25F"
+					}
+				},
+				{
+					"text": "Hermit Crab",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "HermitCrabEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|270"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 225",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|271"
+					}
+				},
+				{
+					"text": "Rabbit",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "RabbitEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|282"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|283"
+					}
+				},
+				{
+					"text": "Wolf",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "WolfEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|294"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|295"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Speed Multiplier",
+			"content": [{
+					"text": "Angler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "AnglerSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|206"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|207"
+					}
+				},
+				{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "ChickenSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|218"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|219"
+					}
+				},
+				{
+					"text": "Fog Crawler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "FogCrawlerSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|22A"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|22B"
+					}
+				},
+				{
+					"text": "Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|23C"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|23D"
+					}
+				},
+				{
+					"text": "Gulper Devourer",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDevourerSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24E"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|24F"
+					}
+				},
+				{
+					"text": "Young Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperYoungSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|260"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|261"
+					}
+				},
+				{
+					"text": "Hermit Crab",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "HermitCrabSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|272"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|273"
+					}
+				},
+				{
+					"text": "Rabbit",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "RabbitSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|284"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|285"
+					}
+				},
+				{
+					"text": "Wolf",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "WolfSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|296"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Far Harbor.esp|297"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Stat Influence",
+			"content": [{
+					"text": "Angler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "AnglerInfluence"
+					}
+				},
+				{
+					"text": "Chicken",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "ChickenInfluence"
+					}
+				},
+				{
+					"text": "Fog Crawler",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "FogCrawlerInfluence"
+					}
+				},
+				{
+					"text": "Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperInfluence"
+					}
+				},
+				{
+					"text": "Gulper Devourer",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperDevourerInfluence"
+					}
+				},
+				{
+					"text": "Young Gulper",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "GulperYoungInfluence"
+					}
+				},
+				{
+					"text": "Hermit Crab",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "HermitCrabInfluence"
+					}
+				},
+				{
+					"text": "Rabbit",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "RabbitInfluence"
+					}
+				},
+				{
+					"text": "Wolf",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "WolfInfluence"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Master Control",
+			"content": [{
+					"text": "Individual master toggles:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Controls whether these stats are being recalculated for Far Harbor NPCs by setting all respective toggles to ON or OFF - to avoid having to individually turn off each one. These can also be used as reset switches for any toggles you may have changed to save time.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "EnableHealth"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Far Harbor.esp|20",
+						"function": "ToggleHealthSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "EnableDamageResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Far Harbor.esp|20",
+						"function": "ToggleDamageResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "EnableEnergyResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Far Harbor.esp|20",
+						"function": "ToggleEnergyResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "EnableSpeedMult"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Far Harbor.esp|20",
+						"function": "ToggleSpeedMultSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Health on Speed Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Far Harbor.esp|20",
+						"propertyName": "EnableInfluence"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Far Harbor.esp|20",
+						"function": "ToggleInfluenceSwitchers",
+						"params": ["{value}"]
+					}
+				}
+			]
+		}
+	]
+}

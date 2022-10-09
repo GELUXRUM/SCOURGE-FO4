@@ -1,0 +1,6098 @@
+{
+	"modName": "SCOURGE - Vanilla",
+	"displayName": "SCOURGE - Vanilla",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["SCOURGE - Vanilla.esp"],
+	"content": [{
+			"type": "spacer",
+			"numLines": 3
+		},
+		{
+			"text": "<p align='center'><font size='16'>Welcome to</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='69' color='#42069A'>SCOURGE</font></p>",
+			"html": true,
+			"type": "text"
+		},
+		{
+			"text": "<p align='center'><font size='20'>The One Rework To Rule Them All</font></p>",
+			"html": true,
+			"type": "text"
+		}
+	],
+	"pages": [{
+			"pageDisplayName": "Usage Instructions",
+			"content": [{
+					"text": "How to use this mod:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    The sliders are used to set the minimum and maximum possible values that an NPC's stats can take. If min and max values are 80 and 120 respectively, the NPC will have their respective stat range from 80 and 120, with an average of 100.<br>    Some sliders have the word \"Bonus\" in them, this slider works differently and instead will ADD to their current value rather than set. This is used only for NPCs that can wear any sort of armor due to technical limitations.<br>    Each set of sliders also has a toggle to enable or disable those sliders. If you were to disable the health slider, then the NPC would only have its Damage Resistance, Energy Resistance and Speed Multiplier affected.<br>    The \"Master Control\" page will allow you to set all sliders ON/OFF, with the ability to do it for individual stats for all NPCs. There is also a toggle to disable the whole mod entirely.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Some things to note:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    All stat changes are final and CANNOT be reverted without changing them manually through console commands. If you were to use the toggles to disable the mod, only newly-spawned NPCs will have vanilla stats.<br>    It is highly recommended to apply exclusion keywords to NPCs that you want to be left untouched, such as companions. More info on what they keywords are and do can be found by going into the mod's .esp file and reading their descriptions.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Where to find me:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    You can find me on Discord: GELUXRUM#0001<br>    Or in the MAIM Discord server: discord.gg/YuaJ7tVdkd</font>",
+					"html": true,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Health",
+			"content": [{
+					"text": "Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AlienHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|200"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|201"
+					}
+				},
+				{
+					"text": "Assaultron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AssaultronHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|212"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|213"
+					}
+				},
+				{
+					"text": "Behemoth",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BehemothHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 1000",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|224"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 2000",
+					"valueOptions": {
+						"min": 500,
+						"max": 3000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|225"
+					}
+				},
+				{
+					"text": "Bloatfly",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloatflyHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|236"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|237"
+					}
+				},
+				{
+					"text": "Bloodbug",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloodbugHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|248"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|249"
+					}
+				},
+				{
+					"text": "Brahmin",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BrahminHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25A"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 330",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25B"
+					}
+				},
+				{
+					"text": "Cat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "CatHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|26C"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|26D"
+					}
+				},
+				{
+					"text": "Deathclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DeathclawHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 500",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|27E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 900",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|27F"
+					}
+				},
+				{
+					"text": "Dog: Attack",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogRaiderHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|290"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|291"
+					}
+				},
+				{
+					"text": "Dog: Mongrel",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogViciousHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A2"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A3"
+					}
+				},
+				{
+					"text": "Eyebot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EyebotHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B4"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B5"
+					}
+				},
+				{
+					"text": "Feral: Ghoul",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2C6"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2C7"
+					}
+				},
+				{
+					"text": "Feral: Glowing One",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralGlowingHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2D8"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 325",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2D9"
+					}
+				},
+				{
+					"text": "Gorilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "GorillaHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 375",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2EA"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2EB"
+					}
+				},
+				{
+					"text": "Human",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "HumanHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2FC"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 120",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2FD"
+					}
+				},
+				{
+					"text": "Mirelurk",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|30E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 500",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|30F"
+					}
+				},
+				{
+					"text": "Mirelurk Hunter",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHunterHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 400",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|320"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 550",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|321"
+					}
+				},
+				{
+					"text": "Mirelurk King",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkKingHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|332"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 500",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|333"
+					}
+				},
+				{
+					"text": "Mirelurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkQueenHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 1000",
+					"valueOptions": {
+						"min": 0,
+						"max": 2000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|344"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 2000",
+					"valueOptions": {
+						"min": 1000,
+						"max": 3000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|345"
+					}
+				},
+				{
+					"text": "Molerat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MoleratHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 45",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|356"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 70",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|357"
+					}
+				},
+				{
+					"text": "Mr. Handy",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MrHandyHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|368"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|369"
+					}
+				},
+				{
+					"text": "Mutant Hound",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MutantHoundHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37A"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37B"
+					}
+				},
+				{
+					"text": "Protectron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "ProtectronHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|38C"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 225",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|38D"
+					}
+				},
+				{
+					"text": "Radroach",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadroachHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|39E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|39F"
+					}
+				},
+				{
+					"text": "Radscorpion",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadscorpionHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B0"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 750",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B1"
+					}
+				},
+				{
+					"text": "Radstag",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadstagHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C2"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 420",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C3"
+					}
+				},
+				{
+					"text": "Sentry Bot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SentryBotHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 750",
+					"valueOptions": {
+						"min": 0,
+						"max": 1500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D4"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 1250",
+					"valueOptions": {
+						"min": 0,
+						"max": 2000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D5"
+					}
+				},
+				{
+					"text": "Stingwing",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "StingwingHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3E6"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3E7"
+					}
+				},
+				{
+					"text": "Super Mutant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SuperMutantHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3F8"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 500",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3F9"
+					}
+				},
+				{
+					"text": "Synth: Courser",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthCourserHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 240",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40A"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 400",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40B"
+					}
+				},
+				{
+					"text": "Synth: Gen 1",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen1Health"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 90",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|41C"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 130",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|41D"
+					}
+				},
+				{
+					"text": "Synth: Gen 2",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen2Health"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 120",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|42E"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 160",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|42F"
+					}
+				},
+				{
+					"text": "Turret: Bubble",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretBubbleHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|440"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|441"
+					}
+				},
+				{
+					"text": "Turret: Tripod",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretTripodHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|452"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|453"
+					}
+				},
+				{
+					"text": "Vertibird",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "VertibirdHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 1500",
+					"valueOptions": {
+						"min": 0,
+						"max": 2250,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|464"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 2500",
+					"valueOptions": {
+						"min": 1000,
+						"max": 3500,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|465"
+					}
+				},
+				{
+					"text": "Yao Guai",
+					"type": "section"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "YaoGuaiHealth"
+					}
+				},
+				{
+					"text": "Minimum Health",
+					"type": "slider",
+					"help": "Default: 350",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|476"
+					}
+				},
+				{
+					"text": "Maximum Health",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|477"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Damage Resistance",
+			"content": [{
+					"text": "Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AlienDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|202"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|203"
+					}
+				},
+				{
+					"text": "Assaultron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AssaultronDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|214"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 180",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|215"
+					}
+				},
+				{
+					"text": "Behemoth",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BehemothDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 145",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|226"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 195",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|227"
+					}
+				},
+				{
+					"text": "Bloatfly",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloatflyDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 3",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|238"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 13",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|239"
+					}
+				},
+				{
+					"text": "Bloodbug",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloodbugDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24A"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24B"
+					}
+				},
+				{
+					"text": "Brahmin",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BrahminDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25C"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25D"
+					}
+				},
+				{
+					"text": "Cat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "CatDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|26E"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|26F"
+					}
+				},
+				{
+					"text": "Deathclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DeathclawDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|280"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|281"
+					}
+				},
+				{
+					"text": "Dog: Attack",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogRaiderDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|292"
+					}
+				},
+				{
+					"text": "Maximum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|293"
+					}
+				},
+				{
+					"text": "Dog: Mongrel",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogViciousDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A4"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 23",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A5"
+					}
+				},
+				{
+					"text": "Eyebot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EyebotDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B6"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B7"
+					}
+				},
+				{
+					"text": "Feral: Ghoul",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2C8"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2C9"
+					}
+				},
+				{
+					"text": "Feral: Glowing One",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralGlowingDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DA"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 45",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DB"
+					}
+				},
+				{
+					"text": "Gorilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "GorillaDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2EC"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2ED"
+					}
+				},
+				{
+					"text": "Human",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "HumanDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2FE"
+					}
+				},
+				{
+					"text": "Maximum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2FF"
+					}
+				},
+				{
+					"text": "Mirelurk",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|310"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|311"
+					}
+				},
+				{
+					"text": "Mirelurk Hunter",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHunterDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|322"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|323"
+					}
+				},
+				{
+					"text": "Mirelurk King",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkKingDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|334"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|335"
+					}
+				},
+				{
+					"text": "Mirelurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkQueenDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|346"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|347"
+					}
+				},
+				{
+					"text": "Molerat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MoleratDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 2",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|358"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 13",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|359"
+					}
+				},
+				{
+					"text": "Mr. Handy",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MrHandyDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 45",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36A"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 90",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36B"
+					}
+				},
+				{
+					"text": "Mutant Hound",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MutantHoundDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37C"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37D"
+					}
+				},
+				{
+					"text": "Protectron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "ProtectronDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|38E"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 90",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|38F"
+					}
+				},
+				{
+					"text": "Radroach",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadroachDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 1",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A0"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A1"
+					}
+				},
+				{
+					"text": "Radscorpion",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadscorpionDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B2"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B3"
+					}
+				},
+				{
+					"text": "Radstag",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadstagDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C4"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C5"
+					}
+				},
+				{
+					"text": "Sentry Bot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SentryBotDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D6"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D7"
+					}
+				},
+				{
+					"text": "Stingwing",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "StingwingDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3E8"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 17",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3E9"
+					}
+				},
+				{
+					"text": "Super Mutant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SuperMutantDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FA"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 45",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FB"
+					}
+				},
+				{
+					"text": "Synth: Courser",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthCourserDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40C"
+					}
+				},
+				{
+					"text": "Maximum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40D"
+					}
+				},
+				{
+					"text": "Synth: Gen 1",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen1DamageResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|41E"
+					}
+				},
+				{
+					"text": "Maximum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|41F"
+					}
+				},
+				{
+					"text": "Synth: Gen 2",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen2DamageResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|430"
+					}
+				},
+				{
+					"text": "Maximum Bonus Damage Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|431"
+					}
+				},
+				{
+					"text": "Turret: Bubble",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretBubbleDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|442"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|443"
+					}
+				},
+				{
+					"text": "Turret: Tripod",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretTripodDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|454"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|455"
+					}
+				},
+				{
+					"text": "Vertibird",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "VertibirdDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 300",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|466"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 600",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|467"
+					}
+				},
+				{
+					"text": "Yao Guai",
+					"type": "section"
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "YaoGuaiDamageResist"
+					}
+				},
+				{
+					"text": "Minimum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|478"
+					}
+				},
+				{
+					"text": "Maximum Damage Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|479"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Energy Resistance",
+			"content": [{
+					"text": "Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AlienEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|204"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|205"
+					}
+				},
+				{
+					"text": "Assaultron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AssaultronEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|216"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|217"
+					}
+				},
+				{
+					"text": "Behemoth",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BehemothEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|228"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 150",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|229"
+					}
+				},
+				{
+					"text": "Bloatfly",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloatflyEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 6",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|23A"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 17",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|23B"
+					}
+				},
+				{
+					"text": "Bloodbug",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloodbugEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 2",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24C"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24D"
+					}
+				},
+				{
+					"text": "Brahmin",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BrahminEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25E"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|25F"
+					}
+				},
+				{
+					"text": "Cat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "CatEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|270"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 3",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|271"
+					}
+				},
+				{
+					"text": "Deathclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DeathclawEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|282"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 400",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|283"
+					}
+				},
+				{
+					"text": "Dog: Attack",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogRaiderEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 3",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|294"
+					}
+				},
+				{
+					"text": "Maximum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|295"
+					}
+				},
+				{
+					"text": "Dog: Mongrel",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogViciousEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 7",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A6"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A7"
+					}
+				},
+				{
+					"text": "Eyebot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EyebotEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B8"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 70",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2B9"
+					}
+				},
+				{
+					"text": "Feral: Ghoul",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2CA"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2CB"
+					}
+				},
+				{
+					"text": "Feral: Glowing One",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralGlowingEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DC"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DD"
+					}
+				},
+				{
+					"text": "Gorilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "GorillaEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2EE"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2EF"
+					}
+				},
+				{
+					"text": "Human",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "HumanEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+						"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|300"
+					}
+				},
+				{
+					"text": "Maximum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 0",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|301"
+					}
+				},
+				{
+					"text": "Mirelurk",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|312"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|313"
+					}
+				},
+				{
+					"text": "Mirelurk Hunter",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHunterEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|324"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|325"
+					}
+				},
+				{
+					"text": "Mirelurk King",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkKingEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|336"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|337"
+					}
+				},
+				{
+					"text": "Mirelurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkQueenEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 200",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|348"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|349"
+					}
+				},
+				{
+					"text": "Molerat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MoleratEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|35A"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|35B"
+					}
+				},
+				{
+					"text": "Mr. Handy",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MrHandyEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36C"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36D"
+					}
+				},
+				{
+					"text": "Mutant Hound",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MutantHoundEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37E"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|37F"
+					}
+				},
+				{
+					"text": "Protectron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "ProtectronEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+						"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|390"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 50",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|391"
+					}
+				},
+				{
+					"text": "Radroach",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadroachEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 3",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A2"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 6",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A3"
+					}
+				},
+				{
+					"text": "Radscorpion",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadscorpionEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B4"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B5"
+					}
+				},
+				{
+					"text": "Radstag",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadstagEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C6"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C7"
+					}
+				},
+				{
+					"text": "Sentry Bot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SentryBotEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 80",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D8"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 125",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3D9"
+					}
+				},
+				{
+					"text": "Stingwing",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "StingwingEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3EA"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 12",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3EB"
+					}
+				},
+				{
+					"text": "Super Mutant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SuperMutantEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FC"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FD"
+					}
+				},
+				{
+					"text": "Synth: Courser",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthCourserEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 30",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40E"
+					}
+				},
+				{
+					"text": "Maximum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+						"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|40F"
+					}
+				},
+				{
+					"text": "Synth: Gen 1",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen1EnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 5",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|420"
+					}
+				},
+				{
+					"text": "Maximum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 15",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|421"
+					}
+				},
+				{
+					"text": "Synth: Gen 2",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Bonus",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen2EnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 10",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|432"
+					}
+				},
+				{
+					"text": "Maximum Bonus Energy Resistance",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|433"
+					}
+				},
+				{
+					"text": "Turret: Bubble",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretBubbleEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 37",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|444"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 75",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|445"
+					}
+				},
+				{
+					"text": "Turret: Tripod",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "TurretTripodEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 35",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|456"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 60",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|457"
+					}
+				},
+				{
+					"text": "Vertibird",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "VertibirdEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 250",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|468"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 400",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|469"
+					}
+				},
+				{
+					"text": "Yao Guai",
+					"type": "section"
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "YaoGuaiEnergyResist"
+					}
+				},
+				{
+					"text": "Minimum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 25",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|47A"
+					}
+				},
+				{
+					"text": "Maximum Energy Resistance",
+					"type": "slider",
+					"help": "Default: 40",
+					"valueOptions": {
+						"min": 0,
+						"max": 1000,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|47B"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Speed Multiplier",
+			"content": [{
+					"text": "Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AlienSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|206"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|207"
+					}
+				},
+				{
+					"text": "Assaultron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AssaultronSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|218"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|219"
+					}
+				},
+				{
+					"text": "Behemoth",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BehemothSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|22A"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|22B"
+					}
+				},
+				{
+					"text": "Bloatfly",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloatflySpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|23C"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|23D"
+					}
+				},
+				{
+					"text": "Bloodbug",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloodbugSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24E"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|24F"
+					}
+				},
+				{
+					"text": "Brahmin",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BrahminSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|260"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|261"
+					}
+				},
+				{
+					"text": "Cat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "CatSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 20",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|272"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|273"
+					}
+				},
+				{
+					"text": "Deathclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DeathclawSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|284"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|285"
+					}
+				},
+				{
+					"text": "Dog: Attack",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogRaiderSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|296"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|297"
+					}
+				},
+				{
+					"text": "Dog: Mongrel",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogViciousSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A8"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2A9"
+					}
+				},
+				{
+					"text": "Eyebot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EyebotSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2BA"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2BB"
+					}
+				},
+				{
+					"text": "Feral: Ghoul",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2CC"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2CD"
+					}
+				},
+				{
+					"text": "Feral: Glowing One",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralGlowingSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DE"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2DF"
+					}
+				},
+				{
+					"text": "Gorilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "GorillaSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2F0"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|2F1"
+					}
+				},
+				{
+					"text": "Human",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "HumanSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|302"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|303"
+					}
+				},
+				{
+					"text": "Mirelurk",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|314"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|315"
+					}
+				},
+				{
+					"text": "Mirelurk Hunter",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHunterSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|326"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|327"
+					}
+				},
+				{
+					"text": "Mirelurk King",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkKingSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|338"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|339"
+					}
+				},
+				{
+					"text": "Mirelurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkQueenSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|34A"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|34B"
+					}
+				},
+				{
+					"text": "Molerat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MoleratSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|35C"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|35D"
+					}
+				},
+				{
+					"text": "Mr. Handy",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MrHandySpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36E"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|36F"
+					}
+				},
+				{
+					"text": "Mutant Hound",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MutantHoundSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|380"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|381"
+					}
+				},
+				{
+					"text": "Protectron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "ProtectronSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|392"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|393"
+					}
+				},
+				{
+					"text": "Radroach",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadroachSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A4"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3A5"
+					}
+				},
+				{
+					"text": "Radscorpion",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadscorpionSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B6"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3B7"
+					}
+				},
+				{
+					"text": "Radstag",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadstagSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C8"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3C9"
+					}
+				},
+				{
+					"text": "Sentry Bot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SentryBotSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3DA"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3DB"
+					}
+				},
+				{
+					"text": "Stingwing",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "StingwingSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3EC"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3ED"
+					}
+				},
+				{
+					"text": "Super Mutant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SuperMutantSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FE"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|3FF"
+					}
+				},
+				{
+					"text": "Synth: Courser",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthCourserSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|410"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|411"
+					}
+				},
+				{
+					"text": "Synth: Gen 1",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen1SpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|422"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|423"
+					}
+				},
+				{
+					"text": "Synth: Gen 2",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen2SpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|434"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|435"
+					}
+				},
+				{
+					"text": "Vertibird",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "VertibirdSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|46A"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|46B"
+					}
+				},
+				{
+					"text": "Yao Guai",
+					"type": "section"
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "YaoGuaiSpeedMult"
+					}
+				},
+				{
+					"text": "Minimum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|47C"
+					}
+				},
+				{
+					"text": "Maximum Speed Multiplier",
+					"type": "slider",
+					"help": "Default: 100",
+					"valueOptions": {
+						"min": 0,
+						"max": 300,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "SCOURGE - Vanilla.esp|47D"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Stat Influence",
+			"content": [{
+					"text": "<font size='14'>    An experimental feature where Health will limit the possible outcomes of SpeedMult. NPCs that spawn with less health will have higher speeds than those with more health. This will be expanded for more stats in the future, but for now it is only limited to Health and SpeedMult. Info on the specifics can be found in the \"Information\" page.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Alien",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AlienInfluence"
+					}
+				},
+				{
+					"text": "Assaultron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "AssaultronInfluence"
+					}
+				},
+				{
+					"text": "Behemoth",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BehemothInfluence"
+					}
+				},
+				{
+					"text": "Bloatfly",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloatflyInfluence"
+					}
+				},
+				{
+					"text": "Bloodbug",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BloodbugInfluence"
+					}
+				},
+				{
+					"text": "Brahmin",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "BrahminInfluence"
+					}
+				},
+				{
+					"text": "Cat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "CatInfluence"
+					}
+				},
+				{
+					"text": "Deathclaw",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DeathclawInfluence"
+					}
+				},
+				{
+					"text": "Dog: Attack",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogRaiderInfluence"
+					}
+				},
+				{
+					"text": "Dog: Mongrel",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "DogViciousInfluence"
+					}
+				},
+				{
+					"text": "Eyebot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EyebotInfluence"
+					}
+				},
+				{
+					"text": "Feral: Ghoul",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralInfluence"
+					}
+				},
+				{
+					"text": "Feral: Glowing One",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "FeralGlowingInfluence"
+					}
+				},
+				{
+					"text": "Gorilla",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "GorillaInfluence"
+					}
+				},
+				{
+					"text": "Human",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "HumanInfluence"
+					}
+				},
+				{
+					"text": "Mirelurk",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkInfluence"
+					}
+				},
+				{
+					"text": "Mirelur kHunter",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkHunterInfluence"
+					}
+				},
+				{
+					"text": "Mirelurk King",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkKingInfluence"
+					}
+				},
+				{
+					"text": "Mirelurk Queen",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MirelurkQueenInfluence"
+					}
+				},
+				{
+					"text": "Molerat",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MoleratInfluence"
+					}
+				},
+				{
+					"text": "Mr. Handy",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MrHandyInfluence"
+					}
+				},
+				{
+					"text": "Mutant Hound",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "MutantHoundInfluence"
+					}
+				},
+				{
+					"text": "Protectron",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "ProtectronInfluence"
+					}
+				},
+				{
+					"text": "Radroach",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadroachInfluence"
+					}
+				},
+				{
+					"text": "Radscorpion",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadscorpionInfluence"
+					}
+				},
+				{
+					"text": "Radstag",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "RadstagInfluence"
+					}
+				},
+				{
+					"text": "Sentry Bot",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SentryBotInfluence"
+					}
+				},
+				{
+					"text": "Stingwing",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "StingwingInfluence"
+					}
+				},
+				{
+					"text": "Super Mutant",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SuperMutantInfluence"
+					}
+				},
+				{
+					"text": "Synth: Courser",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthCourserInfluence"
+					}
+				},
+				{
+					"text": "Synth: Gen 1",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen1Influence"
+					}
+				},
+				{
+					"text": "Synth: Gen 2",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "SynthGen2Influence"
+					}
+				},
+				{
+					"text": "Vertibird",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "VertibirdInfluence"
+					}
+				},
+				{
+					"text": "Yao Guai",
+					"type": "section"
+				},
+				{
+					"text": "Enable Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "YaoGuaiInfluence"
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Master Control",
+			"content": [{
+					"text": "Master Toggle:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Controls whether the mod is active or not. Note that any existing NPCs will not have their original values restored. Keep in mind that this will not stop the spell from being added to the NPCs; the script will remove the spell and itself instantly and will NOT change any stats if this is toggled OFF.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "SCOURGE master switch",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableSCOURGE"
+					}
+				},
+				{
+					"text": "Individual master toggles:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Controls whether these stats are being recalculated for all NPCs by setting all respective toggles to ON or OFF. To avoid having to individually turn off each one. These can also be used as reset switches for any toggles you may have changed to save time. These switches will only apply to the toggles found in this MCM; DLC and mod-added NPCs will have their own \"Master Control\" pages and switches.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Enable Health Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableHealth"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Vanilla.esp|20",
+						"function": "ToggleHealthSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Damage Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableDamageResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Vanilla.esp|20",
+						"function": "ToggleDamageResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Energy Resistance Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableEnergyResist"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Vanilla.esp|20",
+						"function": "ToggleEnergyResistSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Speed Multiplier Recalculation",
+					"type": "switcher",
+					"help": "Default: ON",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableSpeedMult"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Vanilla.esp|20",
+						"function": "ToggleSpeedMultSwitchers",
+						"params": ["{value}"]
+					}
+				},
+				{
+					"text": "Enable Health on Speed Influence",
+					"type": "switcher",
+					"help": "Default: OFF",
+					"valueOptions": {
+						"sourceType": "PropertyValueBool",
+						"sourceForm": "SCOURGE - Vanilla.esp|20",
+						"propertyName": "EnableInfluence"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "SCOURGE - Vanilla.esp|20",
+						"function": "ToggleInfluenceSwitchers",
+						"params": ["{value}"]
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Information",
+			"content": [{
+					"text": "Some rambling:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    Thank you for using SCOURGE, it really means a lot that you like my work. I'd love it if you could send me some feedback, be it good or bad. The main purpose of the mod has been achieved a long time ago, and any new additions are based on feedback or something that I find interesting, such as the Influence system. If you want something added to the mod, let me know and I will do it if it's worth the effort.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Influence system explanation:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>    The math is very simple - NPCs by default have a chance to land on any 1 of 127 possible values (which then are used in some other calculations to randomise the final result). If the NPC were to land on the value 10, then the possible values for SpeedMult will be limited to the last 10 values. This means that NPCs with the lowest possible health will always have the highest possible speed, but NPCs with health that's just below average will be able to get any speed that's above average, including the max possible one. If the value the NPC lands on is 64 i.e. the midpoint, then it will use 15 values below and above it. All of this may change in the future since this is an experimental feature, so if you have any ideas shoot me a message.</font>",
+					"html": true,
+					"type": "text"
+				},
+				{
+					"text": "Cool people:",
+					"type": "section"
+				},
+				{
+					"text": "<font size='14'>eclix for being a lad<br>rux616 for helping and teaching me<br>theroyalrabite and cuda for early playtesting and being cool<br>Everyone on the MAIM Discord who played the beta<br></font>",
+					"html": true,
+					"type": "text"
+				}
+			]
+		}
+	]
+}
